@@ -62,4 +62,20 @@ Based on the dataset analysis, which includes major power outage events in the c
 The hypothesis that `DEMAND.LOSS.MW` is NMAR is grounded in the belief that the missingness is likely tied to the value of the data itself or the specific circumstances of each outage, rather than being random or solely dependent on observable variables. Additional data and analysis could further elucidate this relationship and potentially reclassify the missingness as MAR.
 
 
+## Missingness Dependency
+
+
+### Permutation Test on Customers Affected Dependency on Cause Category
+
+The permutation test conducted to analyze the dependency of missingness in the `CUSTOMERS.AFFECTED` column on the `CAUSE.CATEGORY` yielded compelling results:
+
+- **Observed Statistic**: The observed statistic for the test was 459.1586462953329.
+- **P-Value**: The calculated p-value was 0.0.
+
+#### Interpretation
+
+A p-value of 0.0 indicates that there is a statistically significant association between the missingness of data in `CUSTOMERS.AFFECTED` and the `CAUSE.CATEGORY` of the outage. This suggests that the likelihood of data being missing in the `CUSTOMERS.AFFECTED` column is not random but is instead influenced by the cause of the power outage.
+
+<iframe src="Plots/pval_dep.html" width=800 height=600 frameBorder=0></iframe>
+
 
