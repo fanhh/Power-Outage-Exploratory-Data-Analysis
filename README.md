@@ -57,18 +57,6 @@ Based on the dataset analysis, which includes major power outage events in the c
 
 3. **Data Collection Limitations**: The methods and tools used for data collection could influence the presence or absence of certain data, particularly in `DEMAND.LOSS.MW`.
 
-#### Additional Data for MAR (Missing At Random) Conversion:
-
-To ascertain whether the missingness in `DEMAND.LOSS.MW` is NMAR and potentially convert it to MAR, the following additional data could be insightful:
-
-1. **Outage Severity Classification**: Data categorizing each outage's severity could clarify if less severe outages often lack demand loss information.
-
-2. **Reporting Entity Information**: Insights into which entities report outages and their specific reporting protocols could explain inconsistencies in the data.
-
-3. **Data Collection Method Details**: A deeper understanding of the data collection process may reveal reasons behind the missing data.
-
-4. **Historical Trends Analysis**: Investigating historical patterns in missingness might expose correlations with external factors, such as technological advancements or changes in reporting standards.
-
 ### Conclusion
 
 The hypothesis that `DEMAND.LOSS.MW` is NMAR is grounded in the belief that the missingness is likely tied to the value of the data itself or the specific circumstances of each outage, rather than being random or solely dependent on observable variables. Additional data and analysis could further elucidate this relationship and potentially reclassify the missingness as MAR.
