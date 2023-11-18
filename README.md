@@ -31,3 +31,5 @@ These columns provide essential data for analyzing the occurrence and impact of 
 
 ## Data Cleaning and Exploratory Data Analysis
 
+<iframe src="Plots/Plots.html" width=800 height=600 frameBorder=0></iframe>
+
