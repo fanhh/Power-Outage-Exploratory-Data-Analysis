@@ -28,3 +28,6 @@ The dataset contains several columns relevant to our central question:
 - `CAUSE.CATEGORY`: The primary cause category of each outage.
 
 These columns provide essential data for analyzing the occurrence and impact of power outages in relation to time (month and year), weather conditions, and their resultant effects.
+
+## Data Cleaning and Exploratory Data Analysis
+
