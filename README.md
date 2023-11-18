@@ -79,7 +79,7 @@ A p-value of 0.0 indicates that there is a statistically significant association
 <iframe src="Plots/pval_dep.html" width=800 height=600 frameBorder=0></iframe>
 
 
-## Permutation Test on Customers Affected Dependency on Outage Duration
+### Permutation Test on Customers Affected Dependency on Outage Duration
 
 Another key aspect of our analysis was investigating the dependency of missingness in the `CUSTOMERS.AFFECTED` column on the `OUTAGE.DURATION`. The results of this permutation test were as follows:
 
