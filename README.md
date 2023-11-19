@@ -81,6 +81,14 @@ This scatter plot visualizes the outage durations throughout the years, with the
 
 ## Interesting Aggregates
 
+The pivot table below presents the number of customers affected by power outages across different years, categorized by month and climate category. This data is critical for several aspects of understanding and managing power outages:
+
+- **Temporal Analysis**: By showing data over various years, the table allows for trend analysis over time. It helps in identifying whether the impact of power outages on customers is changing.
+
+- **Seasonal Variation and Climate Impact**: The categorization by months and climate categories reveals how power outages differ across seasons and under varying climatic conditions.
+
+- **Year-to-Year Comparison**: This layout facilitates a direct comparison between different years, highlighting years with more severe outages.
+
 Here is part of our Aggregates
 
 | YEAR    | 2000.0 | 2001.0 | 2002.0 | 2003.0 | 2004.0 | 2005.0 | 2006.0 | 2007.0 | 2008.0 | 2009.0 | 2010.0 | 2011.0 | 2012.0 | 2013.0 | 2014.0 | 2015.0 | 2016.0 |
