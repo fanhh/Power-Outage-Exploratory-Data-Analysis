@@ -92,5 +92,21 @@ A p-value of 0.3538 suggests that there is no statistically significant associat
 
 <iframe src="Plots/pval_notdep.html" width=800 height=600 frameBorder=0></iframe>
 
+## Hypothesis Testing
+
+**Null Hypothesis**: The amount of time an outage occurs for has not decreased as time goes on. (We have not gotten better at fixing outages)
+
+**Alternative Hypothesis**: The amount of time an outage occurs for has decreased as time goes on. (We have gotten better at fixing outages)
+
+**Test Statistic**: We will be using linear regression to conduct our hypothesis test, as we are measuring over time. 
+
+**Significance Level**: 0.05
+
+**p-value**:0.00
+
+**Conclusion**: We reject our null hypothesis as our p-value is greatly lower than our signifcance level of 0.05. We demonstrate that the amount of time an outage occurs for has decreased from 2000 to 2016. While we cannot a deduce a reason as to why this occurs, its reasonable to say that this is a real trend from 2000 to 2016.
+
+<iframe src="Plots/LR_Outage_Time.html" width=800 height=600 frameBorder=0></iframe>
+
 
 
