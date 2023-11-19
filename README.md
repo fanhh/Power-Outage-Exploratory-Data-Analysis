@@ -56,7 +56,15 @@ Finally, we enhanced the DataFrame’s accessibility:
 
 These steps collectively refined our dataset, enhancing its suitability for an in-depth analysis of power outage trends, causes, and impacts over time. The resulting dataset is more manageable, precise, and aligned with our analytical objectives.
 
->>>>>>> 22e53d696706bcf576071c4a9803173bd6483e86
+Df.Head()
+
+| OBS | YEAR  | MONTH | CLIMATE.CATEGORY | CAUSE.CATEGORY    | OUTAGE.DURATION | DEMAND.LOSS.MW | CUSTOMERS.AFFECTED |
+|-----|-------|-------|------------------|-------------------|-----------------|----------------|--------------------|
+| 1.0 | 2011  | 7     | normal           | severe weather    | 3060            | NaN            | 70000              |
+| 2.0 | 2014  | 5     | normal           | intentional attack| 1               | NaN            | NaN                |
+| 3.0 | 2010  | 10    | cold             | severe weather    | 3000            | NaN            | 70000              |
+| 4.0 | 2012  | 6     | normal           | severe weather    | 2550            | NaN            | 68200              |
+| 5.0 | 2015  | 7     | warm             | severe weather    | 1740            | 250            | 250000             |
 
 
 ## Univariate Analysis
