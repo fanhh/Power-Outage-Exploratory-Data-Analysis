@@ -77,6 +77,7 @@ There is a significant increase in the number of outages during the summer month
 
 <iframe src="Plots/Year_Outage.html" width=800 height=600 frameBorder=0></iframe>
 
+This scatter plot visualizes the outage durations throughout the years, with the y-axis depicting how long an outage lasted, and the x-axis grouping the outages by year.
 
 ## Assessment of Missingness
 
