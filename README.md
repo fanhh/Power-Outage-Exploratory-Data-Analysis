@@ -2,45 +2,50 @@
 
 ## Introduction
 
-This dataset encompasses Major Power Outage Events in the Continental United States, spanning from January 2000 to July 2016. It provides detailed insights into power outages that affected individual U.S. states at the time of occurrence. The dataset comprises over 1541 rows, each representing a unique power outage event, and is crucial for understanding patterns and causes of power outages across different regions and times.
+This dataset provides an extensive overview of Major Power Outage Events in the Continental United States from January 2000 to July 2016. It includes detailed data on individual power outages across U.S. states, comprising over 1541 unique events. This dataset is invaluable for examining the patterns, causes, and impacts of power outages in different regions and across various time periods.
 
 ## Central Question
 
-The analysis centers around the question: "Are certain weather conditions, causes of events, or specific months more likely to lead to power outages?" This question is particularly important as it can assist individuals in understanding and potentially avoiding power outages. By analyzing this data, we can provide valuable information for planning travel or residential choices, aiming to reduce the likelihood of experiencing power outages.
+In light of the evolving nature of power infrastructure and environmental factors, our analysis focuses on the trend of power outages over time: "Have power outages in the United States remained constant, or have they increased over the years?" This question is pivotal in understanding the resilience of power systems against various challenges and in anticipating future trends.
 
 ## Why This Matters
 
-Understanding the patterns in power outages is crucial for several reasons:
+Examining the trend of power outages over time is crucial for multiple reasons:
 
-- **Preventive Planning**: Helps in strategic planning to prevent or mitigate outages.
-- **Safety and Convenience**: Assists individuals in making informed decisions about travel or residential locations to avoid the inconvenience and potential hazards associated with power outages.
-- **Resource Allocation**: Aids utility companies and government agencies in resource allocation and emergency preparedness, particularly in areas and times more susceptible to outages.
+- **Infrastructure Development**: Insights into outage trends can guide the improvement and reinforcement of power infrastructure.
+- **Emergency Preparedness**: Understanding whether outages are increasing can help in enhancing emergency response strategies and resource allocation.
+- **Policy Making**: Identifying trends in power outages supports informed policy decisions and investments in energy sectors.
 
 ## Key Columns in the Dataset
 
-The dataset contains several columns relevant to our central question:
+The dataset includes several columns that are instrumental in analyzing the trend and impact of power outages:
 
-- `CUSTOMERS.AFFECTED`: Number of customers affected by each power outage.
-- `MONTH`: The month when the outage occurred.
-- `YEAR`: The year when the outage occurred.
-- `OUTAGE.DURATION`: The duration of the outage in minutes.
-- `DEMAND.LOSS.MW`: The demand loss in megawatts due to the outage.
-- `CAUSE.CATEGORY`: The primary cause category of each outage.
+- `CUSTOMERS.AFFECTED`: The number of customers impacted by each power outage.
+- `MONTH` and `YEAR`: The time when the outage occurred, providing a temporal context.
+- `OUTAGE.DURATION`: The duration of each outage, in minutes.
+- `DEMAND.LOSS.MW`: The magnitude of demand loss in megawatts.
+- `CAUSE.CATEGORY`: The primary cause of each outage.
 
-These columns provide essential data for analyzing the occurrence and impact of power outages in relation to time (month and year), weather conditions, and their resultant effects.
+These columns are essential for understanding the frequency, duration, and causes of power outages, as well as their changing patterns over time.
+
 
 ## Data Cleaning and Exploratory Data Analysis
+
+Data Cleaning
+
+We first decided to only keep the relevant columns: 'result', 'dragons', 'opp_dragons', 'elementaldrakes', 'opp_elementaldrakes', 'infernals', 'mountains', 'clouds', 'oceans', 'chemtechs', 'hextechs', 'dragons (type unknown)', and only the relevant rows. Relevant rows are where information on dragons was entered and there were 4 elemental dragons taken by the same team (this is the requirement to get the soul). Note that this indirectly makes it one row per game, as only the 2 summary statistics rows contain dragon information, and only at most one of those rows can have 4 or more dragons. From here, we realized that we cannot work with data where ‘dragons (type unknown)’ was the recorded datatype because the type of dragon was not recorded (making it impossible to calculate soul). So we removed this column and any rows where ‘dragons (type unknown)’ was not null. After this, we added the column ‘soul_type’, which recorded which type of soul was taken, and converted the results column from 0 and 1 to a series of booleans.
 
 
 
 ## Univariate Analysis
 
 <iframe src="Plots/Plots.html" width=800 height=600 frameBorder=0></iframe>
+There is a significant increase in the number of outages during the summer months, particularly in hot weather conditions. Conversely, the early months show a higher frequency of outages in cold weather. For the remainder of the year, outage counts across various weather conditions tend to even out.
 
 
 ## Bivariate Analysis
 
-<iframe src="Plots/cause_cust.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="Plots/Year_Outage.html" width=800 height=600 frameBorder=0></iframe>
 
 
 ## Assessment of Missingness
@@ -88,7 +93,7 @@ Another key aspect of our analysis was investigating the dependency of missingne
 
 #### Interpretation
 
-A p-value of 0.3538 suggests that there is no statistically significant association between the missingness of data in `CUSTOMERS.AFFECTED` and the `OUTAGE.DURATION`. This indicates that the likelihood of data being missing in the `CUSTOMERS.AFFECTED` column is not influenced by the duration of the power outage.
+A p-value of 0.9936 suggests that there is no statistically significant association between the missingness of data in `CUSTOMERS.AFFECTED` and the `OUTAGE.DURATION`. This indicates that the likelihood of data being missing in the `CUSTOMERS.AFFECTED` column is not influenced by the duration of the power outage.
 
 <iframe src="Plots/pval_notdep.html" width=800 height=600 frameBorder=0></iframe>
 
