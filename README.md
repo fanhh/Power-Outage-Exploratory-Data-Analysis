@@ -31,6 +31,97 @@ These columns provide essential data for analyzing the occurrence and impact of 
 
 ## Data Cleaning and Exploratory Data Analysis
 
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>YEAR</th>
+      <th>MONTH</th>
+      <th>CLIMATE.CATEGORY</th>
+      <th>CAUSE.CATEGORY</th>
+      <th>OUTAGE.DURATION</th>
+      <th>DEMAND.LOSS.MW</th>
+      <th>CUSTOMERS.AFFECTED</th>
+    </tr>
+    <tr>
+      <th>OBS</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1.0</th>
+      <td>2011.0</td>
+      <td>7.0</td>
+      <td>normal</td>
+      <td>severe weather</td>
+      <td>3060</td>
+      <td>NaN</td>
+      <td>70000.0</td>
+    </tr>
+    <tr>
+      <th>2.0</th>
+      <td>2014.0</td>
+      <td>5.0</td>
+      <td>normal</td>
+      <td>intentional attack</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3.0</th>
+      <td>2010.0</td>
+      <td>10.0</td>
+      <td>cold</td>
+      <td>severe weather</td>
+      <td>3000</td>
+      <td>NaN</td>
+      <td>70000.0</td>
+    </tr>
+    <tr>
+      <th>4.0</th>
+      <td>2012.0</td>
+      <td>6.0</td>
+      <td>normal</td>
+      <td>severe weather</td>
+      <td>2550</td>
+      <td>NaN</td>
+      <td>68200.0</td>
+    </tr>
+    <tr>
+      <th>5.0</th>
+      <td>2015.0</td>
+      <td>7.0</td>
+      <td>warm</td>
+      <td>severe weather</td>
+      <td>1740</td>
+      <td>250</td>
+      <td>250000.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 ## Univariate Analysis
