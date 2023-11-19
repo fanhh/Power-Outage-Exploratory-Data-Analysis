@@ -79,6 +79,22 @@ There is a significant increase in the number of outages during the summer month
 
 This scatter plot visualizes the outage durations throughout the years, with the y-axis depicting how long an outage lasted, and the x-axis grouping the outages by year.
 
+## Interesting Aggregates
+
+Here is part of our Aggregates
+
+| YEAR    | 2000.0 | 2001.0 | 2002.0 | 2003.0 | 2004.0 | 2005.0 | 2006.0 | 2007.0 | 2008.0 | 2009.0 | 2010.0 | 2011.0 | 2012.0 | 2013.0 | 2014.0 | 2015.0 | 2016.0 |
+|---------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| MONTH   | CLIMATE.CATEGORY |                                                                                  |
+| April   | cold   | NaN    | NaN    | NaN    | NaN    | NaN    | NaN    | NaN    | NaN    | 488689 | NaN    | NaN    | 833000 | NaN    | NaN    | NaN    | NaN    | NaN    |
+|         | normal | NaN    | NaN    | 0      | 653530 | 451000 | NaN    | 1085882| 644232 | NaN    | 738093 | NaN    | NaN    | 231770 | 99189  | 299200 | NaN    | NaN    |
+|         | warm   | NaN    | NaN    | NaN    | NaN    | NaN    | 361000 | NaN    | NaN    | NaN    | NaN    | 149376 | NaN    | NaN    | NaN    | 582782 | 629967 | 
+| August  | cold   | 568567 | NaN    | NaN    | NaN    | NaN    | NaN    | NaN    | 907090 | NaN    | NaN    | 492075 | 5193989| NaN    | NaN    | NaN    | NaN    | NaN    |
+|         | normal | NaN    | 600000 | NaN    | 6815350| NaN    | 1702797| 0      | NaN    | 1327773| NaN    | NaN    | NaN    | 1042872| 663339 | NaN    | NaN    | NaN    |
+|         | warm   | NaN    | NaN    | 25000  | NaN    | 2617000| NaN    | NaN    | NaN    | NaN    | 348156 | NaN    | NaN    | NaN    | NaN    | NaN    | 1263520| NaN    |
+| ...     | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    | ...    |
+
+
 ## Assessment of Missingness
 
 ### NMAR (Not Missing At Random) Considerations
