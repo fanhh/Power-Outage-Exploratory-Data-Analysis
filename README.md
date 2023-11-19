@@ -31,8 +31,7 @@ These columns are essential for understanding the frequency, duration, and cause
 
 ## Data Cleaning and Exploratory Data Analysis
 
-=======
-## Data Cleaning
+### Data Cleaning
 
 Our initial step in data preparation involved selectively retaining columns relevant to our analysis: 'YEAR', 'MONTH', 'CLIMATE.CATEGORY', 'CAUSE.CATEGORY', 'OUTAGE.DURATION', 'DEMAND.LOSS.MW', and 'CUSTOMERS.AFFECTED'. This refinement was essential to focus exclusively on variables that directly contribute to understanding power outages.
 
