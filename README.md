@@ -31,9 +31,29 @@ These columns are essential for understanding the frequency, duration, and cause
 
 ## Data Cleaning and Exploratory Data Analysis
 
-Data Cleaning
+## Data Cleaning
 
-We first decided to only keep the relevant columns: 'result', 'dragons', 'opp_dragons', 'elementaldrakes', 'opp_elementaldrakes', 'infernals', 'mountains', 'clouds', 'oceans', 'chemtechs', 'hextechs', 'dragons (type unknown)', and only the relevant rows. Relevant rows are where information on dragons was entered and there were 4 elemental dragons taken by the same team (this is the requirement to get the soul). Note that this indirectly makes it one row per game, as only the 2 summary statistics rows contain dragon information, and only at most one of those rows can have 4 or more dragons. From here, we realized that we cannot work with data where ‘dragons (type unknown)’ was the recorded datatype because the type of dragon was not recorded (making it impossible to calculate soul). So we removed this column and any rows where ‘dragons (type unknown)’ was not null. After this, we added the column ‘soul_type’, which recorded which type of soul was taken, and converted the results column from 0 and 1 to a series of booleans.
+Our initial step in data preparation involved selectively retaining columns relevant to our analysis: 'YEAR', 'MONTH', 'CLIMATE.CATEGORY', 'CAUSE.CATEGORY', 'OUTAGE.DURATION', 'DEMAND.LOSS.MW', and 'CUSTOMERS.AFFECTED'. This refinement was essential to focus exclusively on variables that directly contribute to understanding power outages.
+
+Subsequently, we addressed the structure and integrity of the data:
+
+- **Indexing**: We set 'OBS' as the DataFrame index for easier data manipulation and referencing.
+- **Trimming Rows**: The first row of the DataFrame was excluded, likely due to its irrelevance or incorrect data.
+- **Excluding First Column**: The first column was discarded to eliminate unnecessary data, streamlining our dataset further.
+
+Next, we concentrated on standardizing and clarifying the date information:
+
+- **Date Conversion**: We converted 'OUTAGE.START.DATE' and 'OUTAGE.RESTORATION.DATE' into standardized datetime formats, maintaining only the date component for simplicity and consistency.
+
+In dealing with missing values:
+
+- **Missing Values Indicator**: A new column, 'CUSTOMERS.AFFECTED_MISSING', was introduced to mark rows with missing data in the 'CUSTOMERS.AFFECTED' field, enhancing the dataset's reliability for analytical purposes.
+
+Finally, we enhanced the DataFrame’s accessibility:
+
+- **Display Settings**: Adjusted display settings to ensure complete visibility of all DataFrame columns, aiding in comprehensive data examination and validation.
+
+These steps collectively refined our dataset, enhancing its suitability for an in-depth analysis of power outage trends, causes, and impacts over time. The resulting dataset is more manageable, precise, and aligned with our analytical objectives.
 
 
 
