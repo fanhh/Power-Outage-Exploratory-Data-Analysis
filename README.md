@@ -94,15 +94,15 @@ A p-value of 0.3538 suggests that there is no statistically significant associat
 
 ## Hypothesis Testing
 
-**Null Hypothesis**: The amount of time an outage occurs for has not decreased as time goes on. (We have not gotten better at fixing outages)
+**Null Hypothesis**: The average outage duration has remained constant or increased from January 2000 till July 2016. (We have not gotten better at fixing outages)
 
-**Alternative Hypothesis**: The amount of time an outage occurs for has decreased as time goes on. (We have gotten better at fixing outages)
+**Alternative Hypothesis**: The average outage duration has decreased overtime, from January 2000 till July 2016. (We have gotten better at fixing outages)
 
-**Test Statistic**: We will be using linear regression to conduct our hypothesis test, as we are measuring over time. 
+**Test Statistic**: We will be using linear regression to conduct our hypothesis test, as we are measuring over time. Linear regression is the most appropiate tool as it provides a quantitative measure of the strength and direction of the trend we want to investigate, in this case outage duration.
 
-**Significance Level**: 0.05
+**Significance Level**: We will be using 0.05 as our significance level, as it's the standard significance level for hypothesis testing.
 
-**p-value**:0.00
+**p-value**: We calculated a p-value less than 0.001
 
 **Conclusion**: We reject our null hypothesis as our p-value is greatly lower than our signifcance level of 0.05. We demonstrate that the amount of time an outage occurs for has decreased from 2000 to 2016. While we cannot a deduce a reason as to why this occurs, its reasonable to say that this is a real trend from 2000 to 2016.
 
